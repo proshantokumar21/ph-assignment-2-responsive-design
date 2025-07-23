@@ -6,13 +6,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Responsive Flowers</title>
+    <script>
+        function show() {
+            alert("Flower Added to Cart");
+            }
+    </script>
 </head>
 <body class="font-sans">
     <div class="items-center w-9/10 md:w-8/10 ml-auto mr-auto">
     <header>
         <div class="flex justify-between items-center p-4">
             <div class="">
-                <img src="images/logo.png" alt="logo" class="w-40 h-25">
+                <img src="images/logo.png" alt="logo" class="w-20 h-13 md:w-40 md:h-25">
             </div>
             <div class="flex items-center space-x-16">
                 <div class="hidden sm:block">
@@ -33,11 +38,11 @@
     </header>
     <main>
         <!-- Hero Section -->
-        <div class="flex flex-col-reverse gap-y-10 md:flex-row justify-between items-baseline-last md:h-[60vh] md:mt-16">
+        <div class="flex flex-col-reverse gap-y-10 md:flex-row justify-between items-baseline-last md:h-[60vh] md:mt-16 mt-8">
             <div class="md:w-1/2">
                 <div>
-                    <h1 class="font-bold text-[32px] md:text-[64px]">ALWAYS <span class="text-[#E95A08]">FRESH</span></h1>
-                    <h1 class="font-bold text-[32px] md:text-[64px]"><span class="text-[#E95A08]">FLOWERS</span></h1>
+                    <h1 class="font-bold text-[32px] md:text-[48px]">ALWAYS <span class="text-[#E95A08]">FRESH</span></h1>
+                    <h1 class="font-bold text-[32px] md:text-[48px]"><span class="text-[#E95A08]">FLOWERS</span></h1>
                 </div>
                 <div><p class="opacity-50 mt-2 md:text-[22px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p></div>
             </div>
@@ -48,7 +53,7 @@
         <!-- End Hero Section -->
 
         <!-- Our Plants Section-->
-        <div class="pt-12">
+        <div class="pt-12 mt-16">
             <div class="flex flex-col items-center mt-10 mb-10">
                 <div>
                     <h1 class="font-bold text-[32px] md:text-[64px]"><span class="text-[#E95A08]">Our</span> Plants</h1>
@@ -59,86 +64,88 @@
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
 
-                <div class=" flex flex-col items-center bg-white shadow-lg rounded-lg p-0 m-0 gap-8">
+                <div class=" flex flex-col items-center bg-white shadow-lg p-0 m-0 gap-8 place-content-between">
                     <div class="w-full">
                         <img src="images/sample-flower-image.png" alt="Flower Image" class="w-full object-cover">
                     </div>
                     <div class="text-center">
-                        <div class="font-medium text-[24px] md:text-[28px]">Lily Blossom</div>
-                        <div class="font-bold text-[24px] md:text-[28px]">20 USD</div>
+                        <div class="font-medium text-[20px] md:text-[28px]">Lily Blossom</div>
+                        <div class="font-bold text-[20px] md:text-[28px]">20 USD</div>
                    </div>
-                    <div class="w-full"><button class="bg-[#E95A08] text-white py-2 px-4 w-full h-16 font-semibold text-2xl">ADD TO CART</button></div>
+                    <div class="w-full"><button onclick="show()" class="bg-[#E95A08] text-white py-2 px-2 md:px-4 w-full h-16 font-semibold text-[20px]">ADD TO CART</button></div>
                 </div>
-                <div class=" flex flex-col items-center bg-white shadow-lg rounded-lg p-0 m-0 gap-8">
+                <div class=" flex flex-col items-center bg-white shadow-lg p-0 m-0 gap-8 place-content-between">
                     <div class="w-full">
                         <img src="images/sample-flower-image.png" alt="Flower Image" class="w-full object-cover">
                     </div>
                     <div class="text-center">
-                        <div class="font-medium text-[24px] md:text-[28px]">Lily Blossom</div>
-                        <div class="font-bold text-[24px] md:text-[28px]">20 USD</div>
+                        <div class="font-medium text-[20px] md:text-[28px]">Lily Blossom</div>
+                        <div class="font-bold text-[20px] md:text-[28px]">20 USD</div>
                    </div>
-                    <div class="w-full"><button class="bg-[#E95A08] text-white py-2 px-4 w-full h-16 font-semibold text-2xl">ADD TO CART</button></div>
+                    <div class="w-full"><button onclick="show()" class="bg-[#E95A08] text-white py-2 px-2 md:px-4 w-full h-16 font-semibold text-[20px]">ADD TO CART</button></div>
                 </div>
-                <div class=" flex flex-col items-center bg-white shadow-lg rounded-lg p-0 m-0 gap-8">
+                <div class=" flex flex-col items-center bg-white shadow-lg p-0 m-0 gap-8 place-content-between">
                     <div class="w-full">
                         <img src="images/sample-flower-image.png" alt="Flower Image" class="w-full object-cover">
                     </div>
                     <div class="text-center">
-                        <div class="font-medium text-[24px] md:text-[28px]">Lily Blossom</div>
-                        <div class="font-bold text-[24px] md:text-[28px]">20 USD</div>
+                        <div class="font-medium text-[20px] md:text-[28px]">Lily Blossom</div>
+                        <div class="font-bold text-[20px] md:text-[28px]">20 USD</div>
                    </div>
-                    <div class="w-full"><button class="bg-[#E95A08] text-white py-2 px-4 w-full h-16 font-semibold text-2xl">ADD TO CART</button></div>
+                    <div class="w-full"><button onclick="show()" class="bg-[#E95A08] text-white py-2 px-2 md:px-4 w-full h-16 font-semibold text-[20px]">ADD TO CART</button></div>
                 </div>
-                <div class=" flex flex-col items-center bg-white shadow-lg rounded-lg p-0 m-0 gap-8">
+                <div class=" flex flex-col items-center bg-white shadow-lg p-0 m-0 gap-8 place-content-between">
                     <div class="w-full">
                         <img src="images/sample-flower-image.png" alt="Flower Image" class="w-full object-cover">
                     </div>
                     <div class="text-center">
-                        <div class="font-medium text-[24px] md:text-[28px]">Lily Blossom</div>
-                        <div class="font-bold text-[24px] md:text-[28px]">20 USD</div>
+                        <div class="font-medium text-[20px] md:text-[28px]">Lily Blossom</div>
+                        <div class="font-bold text-[20px] md:text-[28px]">20 USD</div>
                    </div>
-                    <div class="w-full"><button class="bg-[#E95A08] text-white py-2 px-4 w-full h-16 font-semibold text-2xl">ADD TO CART</button></div>
+                    <div class="w-full"><button onclick="show()" class="bg-[#E95A08] text-white py-2 px-2 md:px-4 w-full h-16 font-semibold text-[20px]">ADD TO CART</button></div>
                 </div>
-                <div class=" flex flex-col items-center bg-white shadow-lg rounded-lg p-0 m-0 gap-8">
+                <div class=" flex flex-col items-center bg-white shadow-lg p-0 m-0 gap-8 place-content-between">
                     <div class="w-full">
                         <img src="images/sample-flower-image.png" alt="Flower Image" class="w-full object-cover">
                     </div>
                     <div class="text-center">
-                        <div class="font-medium text-[24px] md:text-[28px]">Lily Blossom</div>
-                        <div class="font-bold text-[24px] md:text-[28px]">20 USD</div>
+                        <div class="font-medium text-[20px] md:text-[28px]">Lily Blossom</div>
+                        <div class="font-bold text-[20px] md:text-[28px]">20 USD</div>
                    </div>
-                    <div class="w-full"><button class="bg-[#E95A08] text-white py-2 px-4 w-full h-16 font-semibold text-2xl">ADD TO CART</button></div>
+                    <div class="w-full"><button onclick="show()" class="bg-[#E95A08] text-white py-2 px-2 md:px-4 w-full h-16 font-semibold text-[20px]">ADD TO CART</button></div>
                 </div>
-                <div class=" flex flex-col items-center bg-white shadow-lg rounded-lg p-0 m-0 gap-8">
+                <div class=" flex flex-col items-center bg-white shadow-lg p-0 m-0 gap-8 place-content-between">
                     <div class="w-full">
                         <img src="images/sample-flower-image.png" alt="Flower Image" class="w-full object-cover">
                     </div>
                     <div class="text-center">
-                        <div class="font-medium text-[24px] md:text-[28px]">Lily Blossom</div>
-                        <div class="font-bold text-[24px] md:text-[28px]">20 USD</div>
+                        <div class="font-medium text-[20px] md:text-[28px]">Lily Blossom</div>
+                        <div class="font-bold text-[20px] md:text-[28px]">20 USD</div>
                    </div>
-                    <div class="w-full"><button class="bg-[#E95A08] text-white py-2 px-4 w-full h-16 font-semibold text-2xl">ADD TO CART</button></div>
+                    <div class="w-full"><button onclick="show()" class="bg-[#E95A08] text-white py-2 px-2 md:px-4 w-full h-16 font-semibold text-[20px]">ADD TO CART</button></div>
                 </div>
-                <div class=" flex flex-col items-center bg-white shadow-lg rounded-lg p-0 m-0 gap-8">
+                <div class=" flex flex-col items-center bg-white shadow-lg p-0 m-0 gap-8 place-content-between">
                     <div class="w-full">
                         <img src="images/sample-flower-image.png" alt="Flower Image" class="w-full object-cover">
                     </div>
                     <div class="text-center">
-                        <div class="font-medium text-[24px] md:text-[28px]">Lily Blossom</div>
-                        <div class="font-bold text-[24px] md:text-[28px]">20 USD</div>
+                        <div class="font-medium text-[20px] md:text-[28px]">Lily Blossom</div>
+                        <div class="font-bold text-[20px] md:text-[28px]">20 USD</div>
                    </div>
-                    <div class="w-full"><button class="bg-[#E95A08] text-white py-2 px-4 w-full h-16 font-semibold text-2xl">ADD TO CART</button></div>
+                    <div class="w-full"><button onclick="show()" class="bg-[#E95A08] text-white py-2 px-2 md:px-4 w-full h-16 font-semibold text-[20px]">ADD TO CART</button></div>
                 </div>
-                <div class=" flex flex-col items-center bg-white shadow-lg rounded-lg p-0 m-0 gap-8">
+                <div class=" flex flex-col items-center bg-white shadow-lg p-0 m-0 gap-8 place-content-between">
                     <div class="w-full">
                         <img src="images/sample-flower-image.png" alt="Flower Image" class="w-full object-cover">
                     </div>
                     <div class="text-center">
-                        <div class="font-medium text-[24px] md:text-[28px]">Lily Blossom</div>
-                        <div class="font-bold text-[24px] md:text-[28px]">20 USD</div>
+                        <div class="font-medium text-[20px] md:text-[28px]">Lily Blossom</div>
+                        <div class="font-bold text-[20px] md:text-[28px]">20 USD</div>
                    </div>
-                    <div class="w-full"><button class="bg-[#E95A08] text-white py-2 px-4 w-full h-16 font-semibold text-2xl">ADD TO CART</button></div>
+                    <div class="w-full"><button onclick="show()" class="bg-[#E95A08] text-white py-2 px-2 md:px-4 w-full h-16 font-semibold text-[20px]">ADD TO CART</button></div>
                 </div>
+                
+                
                 
                 
             </div>
@@ -146,16 +153,16 @@
         <!-- End Our Plants Section -->
 
         <!-- Flowers&Plants Lover Section-->
-            <div class="flex flex-col mt-16 gap-4 md:flex-row md:justify-between md:items-center md:h-[80vh] md:gap-16 md:mt-32">
+            <div class="flex flex-col mt-32 gap-4 md:flex-row md:justify-between md:items-center md:h-[80vh] md:gap-16 md:mt-32">
             <div class="md:w-1/2 md:h-full relative">
                 <div class="hidden md:block md:absolute md:top-0 md:right-0 md:translate-x-24 md:-translate-y-24 z-10">
-                <img src="images/trusted-badge.png" alt="Trusted Badge" class="w-48 h-48">
+                <img src="images/trusted-badge.png" alt="Trusted Badge" class="w-48 h-48 animate-spin">
                 </div>
                 <img src="images/flower-store.png" alt="Flower Store" class="w-full md:h-full">
             </div>
             <div class="flex flex-col justify-center gap-4 md:w-1/2 md:h-full">
-                <div class="font-bold text-[32px] md:text-[56px] md:pt-2">Flowers & Plants Lover</div>
-                <div class="text-[20px] pl-4 opacity-50">
+                <div class="font-bold text-[28px] md:text-[56px] md:pt-2">Flowers & Plants Lover</div>
+                <div class="text-[16px] pl-4 opacity-50">
                     <ul class="list-disc space-y-4">
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
@@ -167,7 +174,7 @@
         <!-- End Flowers&Plants Lover Section -->
 
         <!-- Latest Deal Section-->
-         <div class="pt-12">
+         <div class="pt-12 mt-16">
             <div class="flex flex-col items-center mt-10 mb-10">
                 <div>
                     <h1 class="font-bold text-[32px] md:text-[64px]"><span class="text-[#E95A08]">Latest</span> Deals</h1>
@@ -217,7 +224,7 @@
             <div class="flex flex-col gap-4 md:grid md:grid-cols-3 md:place-content-between">
                 <div class="flex flex-col gap-4">
                     <div><img src="/images/logo.png" alt="Logo" class="h-25 w-40"></div>
-                    <div class="opacity-50">Indulge your senses with the beauty and fragrance of our fresh flower shop. </div>
+                    <div class="opacity-50 md:w-60">Indulge your senses with the beauty and fragrance of our fresh flower shop. </div>
                 </div>
                 <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
                     <div>
